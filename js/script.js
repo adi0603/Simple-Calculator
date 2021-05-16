@@ -41,13 +41,18 @@ for(var i =0;i<operator.length;i++){
 	operator[i].addEventListener('click',function(){
 		if(this.id=="clear"){
 			printHistory("");
-			printOutput("");
+			printOutput("0");
 		}
 		else if(this.id=="backspace"){
 			var output=reverseNumberFormat(getOutput()).toString();
 			if(output){//if output has a value
 				output= output.substr(0,output.length-1);
-				printOutput(output);
+				if(output.length>0){
+					printOutput(output);
+				}
+				else{
+					printOutput("0");
+				}
 			}
 		}
 		else{
