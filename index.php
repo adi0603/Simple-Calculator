@@ -20,7 +20,7 @@
 					<p id="history-value"></p>
 				</div>
 				<div id="output">
-					<p id="output-value"></p>
+					<p id="output-value">0</p>
 				</div>
 			</div>
 			<div id="keyboard" >
