@@ -42,7 +42,7 @@
 				<button class="operator" id="+">+</button>
 				<button class="empty" id="empty" onclick="copy();"><i class="fas fa-copy"></i></button>
 				<button class="number" id="0">0</button>
-				<button class="empty" id="empty"></button>
+				<button class="operator" id="dot" style="font-size: 30px;">.</button>
 				<button class="operator" id="=">=</button>
 				<center><p style="font-family: 'monospace';">&copy;Designed By <a href="https://adityapandey.me/" target="_blank" style="text-decoration: none;">Aditya Pandey</a></p></center>
 			</div>
