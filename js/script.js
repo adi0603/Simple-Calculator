@@ -29,12 +29,12 @@ function getFormattedNumber(num){
 	if(num=="-"){
 		return "";
 	}
-	var n = Number(num);
-	var value = n.toLocaleString("en");
+	//var n = Number(num);
+	var value = num.toLocaleString("en");
 	return value;
 }
 function reverseNumberFormat(num){
-	return Number(num.replace(/,/g,''));
+	return num.replace(/,/g,'');
 }
 var operator = document.getElementsByClassName("operator");
 for(var i =0;i<operator.length;i++){
@@ -53,6 +53,13 @@ for(var i =0;i<operator.length;i++){
 				else{
 					printOutput("0");
 				}
+			}
+		}
+		else if(this.id=="dot"){
+			var output=reverseNumberFormat(getOutput()).toString();
+			if(output){//if output has a value
+				output= output.concat(".");
+				printOutput(output);
 			}
 		}
 		else{
